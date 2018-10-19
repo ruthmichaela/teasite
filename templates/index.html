@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}Mood to Brew{% endblock title %}</title>
+
+		<link rel="stylesheet" href="/utils.css">
+		<link rel="stylesheet" href="/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Alice|Source+Sans+Pro:400,700" rel="stylesheet"> 
+
+	</head>
+	<body>
+		<div>
+			{% block header %}
+			<header class="bg-purple white p-v-md p-b-xl t-center">
+				<h1 class="f-md">Discover your perfect brew.</h1>
+				<h2 class="f-serif f-lg f-reg">What's your mood?</h2>
+			</header>
+			<div class="pos-rel">
+				<nav class="nav bg-green in-block p-sm">
+					<a href="#"><img src="/img/night.png" class="nav__icon m-h-sm "></a>
+					<a href="#"><img src="/img/awake.png" class="nav__icon m-h-sm "></a>
+					<a href="#"><img src="/img/healing.png" class="nav__icon m-h-sm "></a>
+					<a href="#"><img src="/img/joy.png" class="nav__icon m-h-sm "></a>
+					<a href="#"><img src="/img/night.png" class="nav__icon m-h-sm "></a> 
+					<a href="#"><img src="/img/healing.png" class="nav__icon m-h-sm "></a>
+				</nav>
+			</div>
+			{% endblock header %}
+
+			{% block content %}
+			<div>
+				<h2 class="t-center f-md p-t-xl">Get started</h2>
+				<p class="t-center f-sm">Select a mood above to find your perfect brew list.</p>
+			</div>
+			{% endblock content %}
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,41 @@
+// STYLES
+
+$font-fam-sans: 'Source Sans Pro', sans-serif;
+$font-fam-serif: 'Alice', serif;
+
+$font-size-sm: 11px;
+$font-size-md: 14px;
+$font-size-lg: 34px;
+
+$font-weight-b: 700;
+$font-weight-r: 400;
+
+
+// COLORS
+$colors:(
+	purple: #685E6C,
+	green: #125B4D,
+	white: #FFFFFF,
+	black: #000000,
+);
+
+@function color($name){
+	@return map-get($colors, $name);
+}
+
+// lAYOUT
+
+$sizes: (
+	sm: 5px,
+	md: 20px,
+	lg: 30px,
+	xl: 50px,
+);
+
+$sides:(
+	t: top,
+	b: bottom,
+	l: left,
+	r: right,
+);
+

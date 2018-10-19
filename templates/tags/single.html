@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+
+{% block content %}
+	{% for page in term.pages %}
+		<div class="teaPreview pos-rel">
+
+			<div>
+				<img src="/img/{{ page.slug }}-1.png" class="teaPreview__imagePrimary max-width in-block">
+			</div>
+
+			<div>
+				<img src="/img/{{ page.slug }}-3.png" class="teaPreview__imageSecondary max-width in-block">
+			</div>
+
+			
+			<div class="teaPreview__copyBlock p-l-md">
+				<div class="t-up t-trk f-bold f-sm white bg-green p-sm in-block pos-rel">Tea Match No. 1</div>
+			
+				<div>
+					<h2 class="f-serif f-lg black f-reg p-t-md">{{ page.title }}</h2>
+				</div>
+
+				<div>
+					<ul class="f-sm t-trk f-bold t-up green">
+						<li>TIME TO BREW: {{ page.extra.brew_time }} minutes</li>
+						<li>KEY EFFECT: {{ page.extra.key_effect }}</li>
+					</ul>
+				</div>
+
+				<div>
+					{{ page.summary | safe }}
+				</div>
+
+				<a href="/{{ page.path }}" class="t-up f-bold green">More on {{ page.title }}</a>
+			</div>
+
+
+	</div>
+	{% endfor %}
+{% endblock content %}

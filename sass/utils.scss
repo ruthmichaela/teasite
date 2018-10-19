@@ -1,0 +1,107 @@
+@import 'globals';
+
+.f-sans {
+	font-family: $font-fam-sans;
+}
+
+.f-serif {
+	font-family: $font-fam-serif;
+}
+
+.f-sm {
+	font-size: $font-size-sm;
+}
+
+.f-md {
+	font-size: $font-size-md;
+}
+
+.f-lg {
+	font-size: $font-size-lg;
+}
+
+.f-reg {
+	font-weight: $font-weight-r;
+}
+
+.f-bold {
+	font-weight: $font-weight-b;
+}
+
+//loop overmap to get colors.
+@each $key, $value in $colors {
+	.#{$key} {
+		color: $value;
+	}
+	.bg-#{$key} {
+		background-color: $value;
+	}
+}
+
+//loop over map to get padding and margin sizes.
+@each $key, $value in $sizes {
+	.m-#{$key}{
+		margin: $value;
+	}
+	.p-#{$key}{
+		padding: $value;
+	}
+	.m-v-#{$key}{
+		margin-top: $value;
+		margin-bottom: $value;
+	}
+	.m-h-#{$key}{
+		margin-right: $value;
+		margin-left: $value;
+	}
+	.p-v-#{$key}{
+		padding-top: $value;
+		padding-bottom: $value;
+	}
+	.p-h-#{$key}{
+		padding-right: $value;
+		padding-left: $value;
+	}
+	@each $sideName, $side in $sides{
+		.m-#{$sideName}-#{$key}{
+			margin-#{$side}: $value;
+		}
+		.p-#{$sideName}-#{$key}{
+			padding-#{$side}: $value;
+		}
+	}
+}
+
+.t-left{
+	text-align: left;
+}
+
+.t-center{
+	text-align: center;
+}
+
+.t-up{
+	text-transform: uppercase;
+}
+
+.t-trk{
+	letter-spacing: 1px;
+}
+
+.in-block{
+	display: inline-block;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.full-width{
+	width: 100%;
+}
+
+.max-width{
+	max-width: 100%;
+}
+
+
