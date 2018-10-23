@@ -16,13 +16,10 @@
 				<h2 class="f-serif f-lg f-reg">What's your mood?</h2>
 			</header>
 			<div class="pos-rel">
-				<nav class="nav bg-green in-block p-sm">
-					<a href="#"><img src="/img/night.png" class="nav__icon m-h-sm "></a>
-					<a href="#"><img src="/img/awake.png" class="nav__icon m-h-sm "></a>
-					<a href="#"><img src="/img/healing.png" class="nav__icon m-h-sm "></a>
-					<a href="#"><img src="/img/joy.png" class="nav__icon m-h-sm "></a>
-					<a href="#"><img src="/img/night.png" class="nav__icon m-h-sm "></a> 
-					<a href="#"><img src="/img/healing.png" class="nav__icon m-h-sm "></a>
+				<nav class="nav bg-green in-block p-sm p-r-md p-l-md">
+					{% for tag in config.extra.tags %}
+						<a href="/tags/{{ tag }}"><img src="/img/{{ tag }}.png" class="nav__icon m-h-sm "></a>
+					{% endfor %}
 				</nav>
 			</div>
 			{% endblock header %}

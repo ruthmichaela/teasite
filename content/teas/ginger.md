@@ -1,12 +1,12 @@
 +++
-title = "Chamomile"
+title = "Ginger"
 
 [taxonomies]
-tags = ["night", "calm", "healing", "joy"]
+tags = ["energizing", "calm", "morning", "healing"]
 
 [extra]
-brew_time = 7
-key_effect = "calming"
+brew_time = 2
+key_effect = "anti-inflammatory"
 
 +++
 

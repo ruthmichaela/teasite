@@ -1,12 +1,12 @@
 +++
-title = "Chamomile"
+title = "Sage"
 
 [taxonomies]
-tags = ["night", "calm", "healing", "joy"]
+tags = ["healing", "morning", "calm"]
 
 [extra]
 brew_time = 7
-key_effect = "calming"
+key_effect = "detoxifying"
 
 +++
 

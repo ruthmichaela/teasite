@@ -1,12 +1,12 @@
 +++
-title = "Chamomile"
+title = "Rosehip"
 
 [taxonomies]
-tags = ["night", "calm", "healing", "joy"]
+tags = ["healing"]
 
 [extra]
-brew_time = 7
-key_effect = "calming"
+brew_time = 13
+key_effect = "detoxifying"
 
 +++
 

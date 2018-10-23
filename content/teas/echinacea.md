@@ -1,12 +1,12 @@
 +++
-title = "Chamomile"
+title = "Echinacea"
 
 [taxonomies]
-tags = ["night", "calm", "healing", "joy"]
+tags = ["healing", "calming", "night"]
 
 [extra]
-brew_time = 7
-key_effect = "calming"
+brew_time = 3
+key_effect = "immune booster"
 
 +++
 

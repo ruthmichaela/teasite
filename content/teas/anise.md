@@ -1,12 +1,12 @@
 +++
-title = "Chamomile"
+title = "Anise"
 
 [taxonomies]
-tags = ["night", "calm", "healing", "joy"]
+tags = ["healing", "calm"]
 
 [extra]
-brew_time = 7
-key_effect = "calming"
+brew_time = 10
+key_effect = "anti-inflammatory"
 
 +++
 

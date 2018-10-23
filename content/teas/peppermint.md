@@ -1,12 +1,12 @@
 +++
-title = "Chamomile"
+title = "Peppermint"
 
 [taxonomies]
-tags = ["night", "calm", "healing", "joy"]
+tags = ["energizing", "morning", "healing", "joy"]
 
 [extra]
-brew_time = 7
-key_effect = "calming"
+brew_time = 4
+key_effect = "refreshing"
 
 +++
 

@@ -16,4 +16,4 @@ taxonomies = [
 ]
 
 [extra]
-# Put all your custom variables here
+tags = [ "night", "awake", "healing", "joy", "calm", "energy" ]
