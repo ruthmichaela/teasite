@@ -12,18 +12,21 @@
 			<!-- IMAGES -->
 		<div class="teaOverview__imageBlock">
 			
-				<img class="teaOverview__imageBlock--imagePrimary" src="/img/{{ page.slug }}-1.png">
+				<img class="teaOverview__imageBlock--imagePrimary" src="/{{ page.path }}{{ page.slug }}-1.png">
 			
-				<img class="teaOverview__imageBlock--imageSecondary max-width" src="/img/{{ page.slug }}-2.png">
+				<img class="teaOverview__imageBlock--imageSecondary max-width" src="{{ resize_image(path=page.path ~ page.slug ~ "-2.png", width=285, height=345, op="fill", quality=95) }}"">
 
-				<img class="teaOverview__imageBlock--imageTertiary" src="/img/{{ page.slug}}-3.png">
+				<img class="teaOverview__imageBlock--imageTertiary" src="/{{ page.path }}{{ page.slug }}-3.png">
 
 		</div>
 
 			<!-- CONTENT -->
-		<div class="teaOverview__copyBlock">
+		<div class="teaOverview__copyBlock m-md">
 				<div>
 					<h2 class="f-serif f-lg purple f-reg p-t-md t-trk-neg">{{ page.title }}</h2>
+				</div>
+				<div>
+					<h2 class="teaOverview__copyBlock--italic f-serif f-md purple f-reg p-t-sm p-b-md">{{ page.extra.s_name }}</h2>
 				</div>
 
 				<div>
@@ -41,6 +44,6 @@
 
 </div>
 
-
-
 {% endblock content %}
+
+

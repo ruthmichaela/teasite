@@ -70,6 +70,42 @@
 			padding-#{$side}: $value;
 		}
 	}
+
+	@each $breakpointName, $breakpoint in $breakpoints{
+		@media (min-width: #{$breakpoint}) {
+
+			.m-#{$key}--#{$breakpointName}{
+				margin: $value;
+			}
+			.p-#{$key}--#{$breakpointName}{
+				padding: $value;
+			}
+			.m-v-#{$key}--#{$breakpointName}{
+				margin-top: $value;
+				margin-bottom: $value;
+			}
+			.m-h-#{$key}--#{$breakpointName}{
+				margin-right: $value;
+				margin-left: $value;
+			}
+			.p-v-#{$key}--#{$breakpointName}{
+				padding-top: $value;
+				padding-bottom: $value;
+			}
+			.p-h-#{$key}--#{$breakpointName}{
+				padding-right: $value;
+				padding-left: $value;
+			}
+			@each $sideName, $side in $sides{
+				.m-#{$sideName}-#{$key}--#{$breakpointName}{
+					margin-#{$side}: $value;
+				}
+				.p-#{$sideName}-#{$key}--#{$breakpointName}{
+					padding-#{$side}: $value;
+				}
+			}
+		}
+	}
 }
 
 .t-left{
@@ -91,6 +127,9 @@
 .t-trk-neg{
 	letter-spacing: -1px;
 }
+.t-underline {
+	text-decoration: underline;
+}
 
 .in-block{
 	display: inline-block;
@@ -107,5 +146,4 @@
 .max-width{
 	max-width: 100%;
 }
-
 

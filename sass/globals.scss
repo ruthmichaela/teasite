@@ -3,9 +3,9 @@
 $font-fam-sans: 'Source Sans Pro', sans-serif;
 $font-fam-serif: 'Alice', serif;
 
-$font-size-sm: 11px;
-$font-size-md: 14px;
-$font-size-lg: 34px;
+$font-size-sm: 13px;
+$font-size-md: 15px;
+$font-size-lg: 36px;
 
 $font-weight-b: 700;
 $font-weight-r: 400;
@@ -13,10 +13,16 @@ $font-weight-r: 400;
 
 // COLORS
 $colors:(
-	purple: #44334A,//#534259,
+	purple: #44334A,
 	green: #125B4D,
 	white: #FFFFFF,
-	black: #000000,
+	//gray: #DBDBDB,
+);
+
+//RESPONSIVE
+$breakpoints: (
+	tablet: 425px + 1px,
+	desktop: 768px + 1px
 );
 
 @function color($name){
@@ -27,7 +33,7 @@ $colors:(
 
 $sizes: (
 	sm: 5px,
-	md: 20px,
+	md: 26px,
 	lg: 30px,
 	xl: 50px,
 );

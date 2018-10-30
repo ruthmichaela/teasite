@@ -16,4 +16,27 @@ taxonomies = [
 ]
 
 [extra]
-tags = [ "night", "awake", "healing", "joy", "calm", "energy" ]
+
+[[extra.tags]]
+name = "night"
+description = "Drinking herbal tea in the late afternoon and evening can have great affect on helping the body and mind to become quiet and calm. Exactly what you need for a restful night and peaceful sleep."
+
+[[extra.tags]]
+name = "awake"
+description = "Starting your morning with a hot cup of herbal tea can help awaken the senses and balance the body. Creating an energy from within that sustains throughout the day."
+
+[[extra.tags]]
+name = "healing"
+description = "Support your body and mind with antioxident rich herbal tea, known for it's healing properties. From anti-inflammatory to detox, herbal tea has been trusted for years for it's ability to support and care for the body."
+
+[[extra.tags]]
+name = "joy"
+description = "Life the mood and awaken your inner light with a warm cup of herbal teas. Give your mind a rest to rebalance and allow joy to enter as you sip on your favorite brew."
+
+[[extra.tags]]
+name = "calm"
+description = "Quiet the mind and body, enter relaxation and peace while you enjoy your favorite brew during a break from the day."
+
+[[extra.tags]]
+name = "energy"
+description = "Energize and rejuvenate your mind and body with herbal teas that are known to boost awareness."
