@@ -17,7 +17,7 @@
 
 <div class="teaList m-v-sm m-v-lg--tablet">
 	{% for page in term.pages %}
-	<a href="/{{ page.path }}" class="teaPreview__link">
+	<a href="{{ config.base_url | safe }}{{ page.path }}" class="teaPreview__link">
 		<div class="teaPreview pos-rel m-v-md m-v-lg--tablet m-v-xl--desktop">
 
 			<div>
@@ -25,7 +25,7 @@
 			</div>
 
 			<div>
-				<img src="/{{ page.path }}{{ page.slug }}-3.png" class="teaPreview__imageSecondary max-width in-block">
+				<img src="{{ config.base_url | safe }}{{ page.path }}{{ page.slug }}-3.png" class="teaPreview__imageSecondary max-width in-block">
 			</div>
 
 			
